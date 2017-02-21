@@ -2,7 +2,8 @@
 
 void imprimirMenu();
 int leerOpcion();
-void imprimirMenuBinDec();
+void imprimirMenuBinDec();}
+double suma(double,double);
 
 int main(){
     imprimirMenu();
@@ -38,3 +39,9 @@ void imprimirMenuBinDec(){
 	printf("\n1. Decimal");
 	printf("\n2. Binario");
 }
+
+double suma(double numero1, double numero2){
+	double res_suma=numero1+numero2;
+	return res_suma;
+}
+	
