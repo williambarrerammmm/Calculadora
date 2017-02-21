@@ -4,6 +4,7 @@ void imprimirMenu();
 int leerOpcion();
 void imprimirMenuBinDec();}
 double suma(double,double);
+double resta(double,double);
 
 int main(){
     imprimirMenu();
@@ -45,3 +46,7 @@ double suma(double numero1, double numero2){
 	return res_suma;
 }
 	
+double resta(double numero1, double numero2){
+	double res_resta=numero1-numero2;
+	return res_resta;
+}
