@@ -11,13 +11,21 @@ int main(){
     imprimirMenu();
     
     switch (leerOpcion()){
-		case 1:
+		case 1:                   // SUMA
+		imprimirMenuBinDec();
+		leerOpcion();
 		      break;
-		case 2:
+		case 2:                   //RESTA
+		imprimirMenuBinDec();
+		leerOpcion();
 		      break;
-		case 3:
+		case 3:                  //MULTIPLICACION
+		imprimirMenuBinDec();
+		leerOpcion();
 		      break;
-		case 4:
+		case 4:                  // SALIDA
+		imprimirMenuBinDec();
+		leerOpcion();
 		      break;
 	}
 }
@@ -31,7 +39,7 @@ void imprimirMenu(){
 }
 
 int leerOpcion(){
-	int i_i_opcion;
+	int i_i_opcion=0;
 	printf("\n Digite una opcion: ");
 	scanf("%d%*c",&i_i_opcion);
 	return i_i_opcion;
