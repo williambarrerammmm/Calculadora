@@ -2,6 +2,7 @@
 
 void imprimirMenu();
 int leerOpcion();
+void imprimirMenuBinDec();
 
 int main(){
     imprimirMenu();
@@ -31,4 +32,9 @@ int leerOpcion(){
 	printf("\n Digite una opcion: ");
 	scanf("%d%*c",&i_i_opcion);
 	return i_i_opcion;
+}
+void imprimirMenuBinDec(){
+	printf("\n El sistema numerico que desea utilizar es: ");
+	printf("\n1. Decimal");
+	printf("\n2. Binario");
 }
