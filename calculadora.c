@@ -7,6 +7,8 @@ double leerNumero();
 double suma(double,double);
 double resta(double,double);
 double multiplicacion(double,double);
+void imprimirRes();
+
 int main(){
 	double numero1;
 	double numero2;
@@ -21,6 +23,7 @@ int main(){
 					   numero1=leerNumero();
 					   numero2=leerNumero();
 					   resultado=suma(numero1, numero2);
+					   imprimirRes(resultado)
 					 ;
 					   
 					   
@@ -62,6 +65,10 @@ int leerOpcion(){
 	scanf("%d%*c",&i_i_opcion);
 	return i_i_opcion;
 }
+
+void imprimirRes(double res){
+	printf("\n El resultado es: %lf",res);
+	}
 void imprimirMenuBinDec(){
 	printf("\n El sistema numerico que desea utilizar es: ");
 	printf("\n1. Decimal");
