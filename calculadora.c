@@ -3,17 +3,29 @@
 void imprimirMenu();
 int leerOpcion();
 void imprimirMenuBinDec();
+double leerNumero();
 double suma(double,double);
 double resta(double,double);
 double multiplicacion(double,double);
-
 int main(){
+	double numero1;
+	double numero2;
+	double resultado;
     imprimirMenu();
     
     switch (leerOpcion()){
 		case 1:                   // SUMA
 		imprimirMenuBinDec();
 		leerOpcion();
+		           if(leerOpcion()==1){
+					   numero1=leerNumero();
+					   numero2=leerNumero();
+					   resultado=suma(numero1, numero2);
+					 ;
+					   
+					   
+										
+					                }
 		      break;
 		case 2:                   //RESTA
 		imprimirMenuBinDec();
@@ -37,6 +49,13 @@ void imprimirMenu(){
 	printf("\n 4. Salir");
 }
 
+double leerNumero(){
+	double i_i_operacion=0;
+	printf("\n Digite un numero: ");
+	scanf("%lf%*c",&i_i_operacion);
+	return i_i_operacion;
+	}
+	
 int leerOpcion(){
 	int i_i_opcion=0;
 	printf("\n Digite una opcion: ");
