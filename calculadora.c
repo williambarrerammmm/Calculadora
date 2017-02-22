@@ -2,7 +2,7 @@
 
 void imprimirMenu();
 int leerOpcion();
-void imprimirMenuBinDec();}
+void imprimirMenuBinDec();
 double suma(double,double);
 double resta(double,double);
 double multiplicacion(double,double);
@@ -24,7 +24,6 @@ int main(){
 		leerOpcion();
 		      break;
 		case 4:                  // SALIDA
-		imprimirMenuBinDec();
 		leerOpcion();
 		      break;
 	}
