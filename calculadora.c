@@ -18,21 +18,22 @@ int main(){
     switch (leerOpcion()){
 		case 1:                   // SUMA
 		imprimirMenuBinDec();
-		leerOpcion();
+		
 		           if(leerOpcion()==1){
 					   numero1=leerNumero();
 					   numero2=leerNumero();
 					   resultado=suma(numero1, numero2);
-					   imprimirRes(resultado)
-					 ;
-					   
-					   
-										
-					                }
+					   imprimirRes(resultado);					   	   
+									   }
 		      break;
 		case 2:                   //RESTA
 		imprimirMenuBinDec();
-		leerOpcion();
+				if(leerOpcion()==1){
+					   numero1=leerNumero();
+					   numero2=leerNumero();
+					   resultado=resta(numero1, numero2);
+					   imprimirRes(resultado);
+									}
 		      break;
 		case 3:                  //MULTIPLICACION
 		imprimirMenuBinDec();
@@ -67,7 +68,7 @@ int leerOpcion(){
 }
 
 void imprimirRes(double res){
-	printf("\n El resultado es: %lf",res);
+	printf("\n El resultado es: %lf\n",res);
 	}
 void imprimirMenuBinDec(){
 	printf("\n El sistema numerico que desea utilizar es: ");
