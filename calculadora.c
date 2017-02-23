@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define Tamano 32
+#define Tamano 64
 
 
 void imprimirMenu();
