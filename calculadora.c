@@ -12,6 +12,7 @@ double multiplicacion(double,double);
 void imprimirRes();
 void recibirBinario( int b[]);
 int convierteBinarioDecimal( int c[]);
+void binario(int);
 
 int main(){
 	double numero1;
@@ -108,6 +109,7 @@ void recibirBinario( int b[]){
 			i=0;
 			while((b[i++]=getchar())!= '\n' && Tamano >i){
 				}
+	}
 	
 		
 int convierteBinarioDecimal(int c[]){
@@ -116,14 +118,14 @@ int convierteBinarioDecimal(int c[]){
 	int decimal=0;
 	int inicio;
 	for ( i = Tamano - 1; i >= 0; i-- ){
-			if ( ' ' != b[i] ){
+			if ( ' ' != c[i] ){
 				inicio = i;
 				break;
 							  }
 			}
 	int valido=1;
 	for ( i = inicio; i >= 0; i-- ){
-				switch( b[i] ){
+				switch( c[i] ){
 					case '0':
 					decimal += 0*potencia;
 					potencia *= 2;
@@ -133,10 +135,10 @@ int convierteBinarioDecimal(int c[]){
 					potencia *= 2;
 					break;
 					default:
-				if ( '\n' != b[i]){
+				if ( '\n' != c[i]){
 					valido = 0;
 					printf("\nEste caracter no es valido ");
-					putchar(b[i]);
+					putchar(c[i]);
 					printf("\n");
 							} 
 				break;
@@ -147,10 +149,24 @@ int convierteBinarioDecimal(int c[]){
 					}else{
 						return 0;
 						}
-}
+	}
 	
+void binario(int num){
+	int aux;
+	if(num==0)
+		return;
+		
+		aux=num%2;
+		num=num/2;
+		binario(num);
+		printf("%d", aux);
+	
+		
 	
 	}
+	
+	
+	
 			
 			
 			
