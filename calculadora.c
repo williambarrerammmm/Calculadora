@@ -37,7 +37,12 @@ int main(){
 		      break;
 		case 3:                  //MULTIPLICACION
 		imprimirMenuBinDec();
-		leerOpcion();
+				if(leerOpcion()==1){
+					   numero1=leerNumero();
+					   numero2=leerNumero();
+					   resultado=multiplicacion(numero1, numero2);
+					   imprimirRes(resultado);
+									}
 		      break;
 		case 4:                  // SALIDA
 		leerOpcion();
