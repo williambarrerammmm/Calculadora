@@ -36,10 +36,8 @@ int main(){
 										   recibirBinario(numBinario);
 										   numero2=convierteBinarioDecimal(numBinario);
 										   resultado=suma(numero1, numero2);
-										   binario(resultado);
-										   
-										   
-										   
+										   binario(resultado);					   
+										   									   
 										   }
 		      break;
 		case 2:                   //RESTA
@@ -49,7 +47,15 @@ int main(){
 					   numero2=leerNumero();
 					   resultado=resta(numero1, numero2);
 					   imprimirRes(resultado);
-									}
+									}else if (leerOpcion()==2){
+										   recibirBinario(numBinario);
+										   numero1=convierteBinarioDecimal(numBinario);
+										   recibirBinario(numBinario);
+										   numero2=convierteBinarioDecimal(numBinario);
+										   resultado=resta(numero1, numero2);
+										   binario(resultado);					   
+										   									   
+										   }
 		      break;
 		case 3:                  //MULTIPLICACION
 		imprimirMenuBinDec();
