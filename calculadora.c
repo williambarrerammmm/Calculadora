@@ -18,6 +18,7 @@ int main(){
 	double numero1;
 	double numero2;
 	double resultado;
+	int numBinario[Tamano];
     imprimirMenu();
     
     switch (leerOpcion()){
@@ -29,7 +30,17 @@ int main(){
 					   numero2=leerNumero();
 					   resultado=suma(numero1, numero2);
 					   imprimirRes(resultado);					   	   
-									   }
+									   }else if (leerOpcion()==2){
+										   recibirBinario(numBinario);
+										   numero1=convierteBinarioDecimal(numBinario);
+										   recibirBinario(numBinario);
+										   numero2=convierteBinarioDecimal(numBinario);
+										   resultado=suma(numero1, numero2);
+										   binario(resultado);
+										   
+										   
+										   
+										   }
 		      break;
 		case 2:                   //RESTA
 		imprimirMenuBinDec();
