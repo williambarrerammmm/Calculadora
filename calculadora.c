@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define Tamano 32
+
 
 void imprimirMenu();
 int leerOpcion();
@@ -8,6 +10,7 @@ double suma(double,double);
 double resta(double,double);
 double multiplicacion(double,double);
 void imprimirRes();
+void recibirBinario( int b[]);
 
 int main(){
 	double numero1;
@@ -92,6 +95,23 @@ double resta(double numero1, double numero2){
 }
 
 double multiplicacion(double numero1, double numero2){
-	double res_multiplicacion=numero1-numero2;
+	double res_multiplicacion=numero1*numero2;
 	return res_multiplicacion;
 }
+void recibirBinario( int b[]){
+	int i = 0;
+	for (i=0; i<Tamano; i++){
+			b[i]= ' ';
+			}
+			printf("\n Introduzca un numero binario: \n");
+			i=0;
+			while((b[i++]=getchar())!= '\n' && Tamano >i){
+				}
+	}
+			
+			
+			
+			
+			
+			
+	
