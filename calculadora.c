@@ -11,6 +11,7 @@ double resta(double,double);
 double multiplicacion(double,double);
 void imprimirRes();
 void recibirBinario( int b[]);
+int convierteBinarioDecimal( int c[]);
 
 int main(){
 	double numero1;
@@ -107,6 +108,48 @@ void recibirBinario( int b[]){
 			i=0;
 			while((b[i++]=getchar())!= '\n' && Tamano >i){
 				}
+	
+		
+int convierteBinarioDecimal(int c[]){
+	int i;
+	int potencia=1;
+	int decimal=0;
+	int inicio;
+	for ( i = Tamano - 1; i >= 0; i-- ){
+			if ( ' ' != b[i] ){
+				inicio = i;
+				break;
+							  }
+			}
+	int valido=1;
+	for ( i = inicio; i >= 0; i-- ){
+				switch( b[i] ){
+					case '0':
+					decimal += 0*potencia;
+					potencia *= 2;
+					break;
+					case '1':
+					decimal += 1*potencia;
+					potencia *= 2;
+					break;
+					default:
+				if ( '\n' != b[i]){
+					valido = 0;
+					printf("\nEste caracter no es valido ");
+					putchar(b[i]);
+					printf("\n");
+							} 
+				break;
+					}
+		}
+		if ( 1 == valido ){
+					return decimal;
+					}else{
+						return 0;
+						}
+}
+	
+	
 	}
 			
 			
