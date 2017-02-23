@@ -64,7 +64,15 @@ int main(){
 					   numero2=leerNumero();
 					   resultado=multiplicacion(numero1, numero2);
 					   imprimirRes(resultado);
-									}
+									}else if (leerOpcion()==2){
+										   recibirBinario(numBinario);
+										   numero1=convierteBinarioDecimal(numBinario);
+										   recibirBinario(numBinario);
+										   numero2=convierteBinarioDecimal(numBinario);
+										   resultado=multiplicacion(numero1, numero2);
+										   binario(resultado);					   
+										   									   
+										   }
 		      break;
 		case 4:                  // SALIDA
 		leerOpcion();
