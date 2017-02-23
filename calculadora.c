@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdbool.h>
+
 #define Tamano 32
 
 
@@ -15,10 +17,13 @@ int convierteBinarioDecimal( int c[]);
 void binario(int);
 
 int main(){
+	int funcion=1;
 	double numero1;
 	double numero2;
 	double resultado;
 	int numBinario[Tamano];
+	
+	while(funcion==1){
     imprimirMenu();
     
     switch (leerOpcion()){
@@ -75,8 +80,13 @@ int main(){
 										   }
 		      break;
 		case 4:                  // SALIDA
-		leerOpcion();
+		funcion=0;
 		      break;
+		 default:
+		 printf("\n opcion invalida");
+	
+		}
+		
 	}
 }
 
